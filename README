@@ -10,3 +10,12 @@ media-libs/libnav-4.1.3_p1199 :
   4.1.3_p1168 version that is marked stable in Gentoo Portage)
 
   The ebuilds themeselves are simple copies of the Gentoo 4.1.3_p1168 versions.
+
+
+media-video/dvdauthor-0.6.18 :
+  Based on the ebuild from http://bugs.gentoo.org/show_bug.cgi?id=308899 with some
+  slight changes:
+  - switched SRC_URI to the (now) more "official" Sourceforge package.
+    (doesn't required rpath patching, etc.)
+  - Added the graphicsmagick patch from Fedora
+
