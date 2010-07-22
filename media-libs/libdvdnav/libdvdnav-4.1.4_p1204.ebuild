@@ -1,8 +1,8 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libdvdread/libdvdread-4.1.3_p1168.ebuild,v 1.7 2010/04/18 12:34:24 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libdvdnav/libdvdnav-4.1.3_p1168.ebuild,v 1.6 2010/04/18 12:35:34 maekke Exp $
 
-EAPI="2"
+EAPI=2
 WANT_AUTOCONF="2.5"
 inherit eutils autotools multilib
 
@@ -12,19 +12,20 @@ SRC_URI="mirror://gentoo/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~mips ppc ~ppc64 ~sh ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris"
-IUSE="+css"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd"
+IUSE=""
 
-DEPEND="!<=media-libs/libdvdnav-4.1.2
-	css? ( media-libs/libdvdcss )"
+DEPEND=">=media-libs/libdvdread-4.1.4_p1204"
 RDEPEND="$DEPEND"
 
 src_prepare() {
+	epatch "${FILESDIR}/${P}-soname.patch"
 	elibtoolize
 	eautoreconf
 }
 
 src_install () {
 	emake DESTDIR="${D}" install || die
-	dodoc AUTHORS DEVELOPMENT-POLICY.txt ChangeLog TODO README || die
+	dodoc AUTHORS DEVELOPMENT-POLICY.txt ChangeLog TODO \
+		doc/dvd_structures README || die
 }
