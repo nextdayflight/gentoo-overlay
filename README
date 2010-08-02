@@ -1,7 +1,7 @@
 This is my Gentoo Portage overlay. It contains general stuff, self-bumps, ebuilds pulled from b.g.o, etc.
 
-media-libs/libdvdread-4.1.4_p1204 :
-media-libs/libnav-4.1.4_p1204 :
+media-libs/libdvdread-4.1.4_p1215 :
+media-libs/libnav-4.1.4_p1215 :
   These are slightly newer revs than those in Gentoo Portage.
   Apart from the usual bug fixes, the newer rev of libdvdread
   restores a DVDFileStat method which is needed
