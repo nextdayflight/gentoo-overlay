@@ -30,6 +30,5 @@ dev-util/boost-build-1.43.0 :
 dev-libs/boost-1.43.0 :
  Copied from Gentoo dev-libs/boost-1.42.0-r1.ebuild with some
  minor patch modifications as described in
- http://bugs.gentoo.org/attachment.cgi?id=235277
-
+ http://bugs.gentoo.org/show_bug.cgi?id=320039
 
