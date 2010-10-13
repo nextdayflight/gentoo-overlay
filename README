@@ -15,20 +15,25 @@ media-libs/libnav-4.1.4_p1217 :
 
 
 media-video/dvdauthor-0.6.18 :
-  Based on the ebuild from http://bugs.gentoo.org/show_bug.cgi?id=308899 with some
-  slight changes:
-  - switched SRC_URI to the (now) more "official" Sourceforge package.
-    (doesn't required rpath patching, etc.)
-  - Added the graphicsmagick patch from Fedora
+   Based on the ebuild from http://bugs.gentoo.org/show_bug.cgi?id=308899 with some
+   slight changes:
+   - switched SRC_URI to the (now) more "official" Sourceforge package.
+     (doesn't required rpath patching, etc.)
+   - Added the graphicsmagick patch from Fedora
 
 
 dev-util/boost-build-1.43.0 :
- Copied from Gentoo dev-util/boost-build-1.42.0.ebuild.
- Patch removed (has been applied upstream)
+  Copied from Gentoo dev-util/boost-build-1.42.0.ebuild.
+  Patch removed (has been applied upstream)
 
 
 dev-libs/boost-1.43.0 :
- Copied from Gentoo dev-libs/boost-1.42.0-r1.ebuild with some
- minor patch modifications as described in
- http://bugs.gentoo.org/show_bug.cgi?id=320039
+  Copied from Gentoo dev-libs/boost-1.42.0-r1.ebuild with some
+  minor patch modifications as described in
+  http://bugs.gentoo.org/show_bug.cgi?id=320039
 
+
+dev-cpp/sparsehash-1.9 :
+  Copied from Gentoo dev-libs/sparsehash-1.5.2.ebuild.
+  Converted hopefully successfully to EAPI=2
+  Added a tiny patch so that tests compile with clang.

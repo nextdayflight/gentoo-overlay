@@ -1,0 +1,10 @@
+--- src/hashtable_test.cc.orig	2010-10-13 13:14:26.738801297 +1100
++++ src/hashtable_test.cc	2010-10-13 13:14:35.747994479 +1100
+@@ -59,6 +59,7 @@
+ #include <iostream>
+ #include <set>
+ #include <vector>
++#include <typeinfo>
+ #include <google/type_traits.h>
+ #include <google/sparsetable>
+ #include "hash_test_interface.h"
