@@ -44,3 +44,7 @@ dev-cpp/sparsehash-1.9 :
   Copied from Gentoo dev-libs/sparsehash-1.5.2.ebuild.
   Converted hopefully successfully to EAPI=2
   Added a tiny patch so that tests compile with clang.
+
+dev-cpp/tbb-3.0.104 :
+  Copied from Gentoo dev-cpp/tbb-3.0.056.ebuild.
+  Small tests patch modification.
