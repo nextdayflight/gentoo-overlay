@@ -14,13 +14,9 @@ media-libs/libnav-4.1.4_p1217 :
   match the ChangeLog.
 
 
-media-video/dvdauthor-0.6.18 :
-   Based on the ebuild from http://bugs.gentoo.org/show_bug.cgi?id=308899 with some
-   slight changes:
-   - switched SRC_URI to the (now) more "official" Sourceforge package.
-     (doesn't required rpath patching, etc.)
-   - Added the graphicsmagick patch from Fedora
-
+media-video/dvdauthor-0.7.0 :
+   Using the patch from http://bugs.gentoo.org/show_bug.cgi?id=308899 
+   with all credit belonging to Daniel Pielmeier
 
 dev-util/boost-build-1.43.0 :
   Copied from Gentoo dev-util/boost-build-1.42.0.ebuild.
