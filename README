@@ -18,29 +18,8 @@ media-video/dvdauthor-0.7.0 :
    Using the patch from http://bugs.gentoo.org/show_bug.cgi?id=308899 
    with all credit belonging to Daniel Pielmeier
 
-dev-util/boost-build-1.43.0 :
-  Copied from Gentoo dev-util/boost-build-1.42.0.ebuild.
-  Patch removed (has been applied upstream)
-dev-util/boost-build-1.44.0 :
-  Copied from Gentoo dev-util/boost-build-1.42.0.ebuild.
-  New patch from b.g.o#320039
-
-
-dev-libs/boost-1.43.0 :
-  Copied from Gentoo dev-libs/boost-1.42.0-r1.ebuild with some
-  minor patch modifications as described in
-  b.g.o#320039
-dev-libs/boost-1.44.0 :
-  Copied from Gentoo dev-libs/boost-1.42.0-r1.ebuild with some
-  minor patch modifications as described in
-  b.g.o#320039
-
-
 dev-cpp/sparsehash-1.9 :
   Copied from Gentoo dev-libs/sparsehash-1.5.2.ebuild.
   Converted hopefully successfully to EAPI=2
   Added a tiny patch so that tests compile with clang.
 
-dev-cpp/tbb-3.0.104 :
-  Copied from Gentoo dev-cpp/tbb-3.0.056.ebuild.
-  Small tests patch modification.
