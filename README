@@ -13,11 +13,6 @@ media-libs/libnav-4.1.4_p1217 :
   with a slight patch to make sure the libraries are versioned at 4.1.4 to
   match the ChangeLog.
 
-
-media-video/dvdauthor-0.7.0 :
-   Using the patch from http://bugs.gentoo.org/show_bug.cgi?id=308899 
-   with all credit belonging to Daniel Pielmeier
-
 dev-cpp/sparsehash-1.9 :
   Copied from Gentoo dev-libs/sparsehash-1.5.2.ebuild.
   Converted hopefully successfully to EAPI=2
