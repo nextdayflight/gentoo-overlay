@@ -18,3 +18,5 @@ dev-cpp/sparsehash-1.9 :
   Converted hopefully successfully to EAPI=2
   Added a tiny patch so that tests compile with clang.
 
+
+
