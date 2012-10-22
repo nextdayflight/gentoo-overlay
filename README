@@ -1,22 +1,8 @@
 This is my Gentoo Portage overlay. It contains general stuff, self-bumps, ebuilds pulled from b.g.o, etc.
 
-media-libs/libdvdread-4.1.4_p1217 :
-media-libs/libnav-4.1.4_p1217 :
-  These are slightly newer revs than those in Gentoo Portage.
-  Apart from the usual bug fixes, the newer rev of libdvdread
-  restores a DVDFileStat method which is needed
-  by recent versions of dvdbackup
-  (This was in the 0.9.7 series but not in the MPlayer
-  4.1.3_p1168 version that is marked stable in Gentoo Portage)
+dev-libs/avro-c :
+   Apache Avro - C client library
 
-  The ebuilds themeselves are simple copies of the Gentoo 4.1.3_p1168 versions,
-  with a slight patch to make sure the libraries are versioned at 4.1.4 to
-  match the ChangeLog.
-
-dev-cpp/sparsehash-1.9 :
-  Copied from Gentoo dev-libs/sparsehash-1.5.2.ebuild.
-  Converted hopefully successfully to EAPI=2
-  Added a tiny patch so that tests compile with clang.
-
-
+dev-python/avro :
+   Apache Avro - Python client library
 
