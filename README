@@ -1,8 +1,14 @@
 This is my Gentoo Portage overlay. It contains general stuff, self-bumps, ebuilds pulled from b.g.o, etc.
 
+app-misc/ec2-api-tools-bin :
+    Amazon EC2 CLI tools.
+    (Latest version, based on ec2-api-tools-1.6.7.2.ebuild from gentoo-x86
+    renamed to 'ec2-api-tools-bin' to reflect it still uses bundled JARs.
+    Has fixes to work in gentoo-prefix)
+
 dev-libs/avro-c :
-   Apache Avro - C client library
+    Apache Avro - C client library
 
 dev-python/avro :
-   Apache Avro - Python client library
+    Apache Avro - Python client library
 
